@@ -11,6 +11,7 @@
 #include "../ClangTidyModuleRegistry.h"
 #include "AvoidConstParamsInDecls.h"
 #include "BracesAroundStatementsCheck.h"
+#include "ConstCompassCheck.h"
 #include "ConstReturnTypeCheck.h"
 #include "ContainerSizeEmptyCheck.h"
 #include "DeleteNullPointerCheck.h"
@@ -53,6 +54,8 @@ public:
         "readability-avoid-const-params-in-decls");
     CheckFactories.registerCheck<BracesAroundStatementsCheck>(
         "readability-braces-around-statements");
+    CheckFactories.registerCheck<ConstCompassCheck>(
+        "readability-const-compass");
     CheckFactories.registerCheck<ConstReturnTypeCheck>(
         "readability-const-return-type");
     CheckFactories.registerCheck<ContainerSizeEmptyCheck>(

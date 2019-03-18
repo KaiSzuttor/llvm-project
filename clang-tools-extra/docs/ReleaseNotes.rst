@@ -123,6 +123,11 @@ Improvements to clang-tidy
   <clang-tidy/checks/modernize-use-override>` now supports `OverrideSpelling`
   and `FinalSpelling` options.
 
+- New :doc:`readability-const-compass
+  <clang-tidy/checks/readability-const-compass>` check.
+
+  FIXME: add release notes.
+
 Improvements to include-fixer
 -----------------------------
 
